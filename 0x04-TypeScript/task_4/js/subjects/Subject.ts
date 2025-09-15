@@ -3,7 +3,8 @@ namespace Subjects {
   export class Subject {
     teacher!: Teacher;
 
-    setTeacher(teacher: Teacher) {
+    // Explicit type annotation for the parameter
+    setTeacher(teacher: Subjects.Teacher): void {
       this.teacher = teacher;
     }
   }
