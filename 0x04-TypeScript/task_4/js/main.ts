@@ -4,12 +4,13 @@
 import Cpp = Subjects.Cpp;
 import Java = Subjects.Java;
 import React = Subjects.React;
+import Teacher = Subjects.Teacher;
 
 const cpp = new Cpp();
 const java = new Java();
 const react = new React();
 
-const cTeacher: Subjects.Teacher = {
+const cTeacher: Teacher = {
   firstName: "Guillaume",
   lastName: "Salva",
   experienceTeachingC: 10,
