@@ -1,6 +1,13 @@
 /// <reference path="./subjects/Cpp.ts" />
 /// <reference path="./subjects/React.ts" />
 /// <reference path="./subjects/Java.ts" />
+import Cpp = Subjects.Cpp;
+import Java = Subjects.Java;
+import React = Subjects.React;
+
+const cpp = new Cpp();
+const java = new Java();
+const react = new React();
 
 const cTeacher: Subjects.Teacher = {
   firstName: "Guillaume",
@@ -8,19 +15,16 @@ const cTeacher: Subjects.Teacher = {
   experienceTeachingC: 10,
 };
 
-const cpp = new Subjects.Cpp();
 cpp.setTeacher(cTeacher);
 console.log("C++");
 console.log(cpp.getRequirements());
 console.log(cpp.getAvailableTeacher());
 
-const java = new Subjects.Java();
 java.setTeacher(cTeacher);
 console.log("Java");
 console.log(java.getRequirements());
 console.log(java.getAvailableTeacher());
 
-const react = new Subjects.React();
 react.setTeacher(cTeacher);
 console.log("React");
 console.log(react.getRequirements());
